@@ -64,11 +64,11 @@ The data directory should contain the images and corresponding segmentation mask
 
 data/
 ├── train/
-│   ├── images/       # Training images
-│   └── masks/        # Corresponding segmentation masks
+   ├── images/       # Training images
+   └── masks/        # Corresponding segmentation masks
 ├── val/
-│   ├── images/       # Validation images
-│   └── masks/        # Corresponding segmentation masks
-└── test/
+   ├── images/       # Validation images
+   └── masks/        # Corresponding segmentation masks
+├── test/
     ├── images/       # Testing images
     └── masks/        # Corresponding segmentation masks
