@@ -8,7 +8,14 @@ The architecture consists of three encoding and three decoding stages, each havi
 ## Project Structure
 The project is organized as follows:
 
-SegNet-Project/ │ ├── model.py # Contains the implementation of the SegNet model ├── train.py # Script to train the model on a dataset ├── dataset.py # Dataset loader for input data ├── utils.py # Utility functions such as saving/loading models ├── requirements.txt # Python dependencies ├── README.md # Project description └── data/ # Directory for storing datasets (e.g., images and labels)
+SegNet-Project/ 
+├── model.py # Contains the implementation of the SegNet model 
+├── train.py # Script to train the model on a dataset 
+├── dataset.py # Dataset loader for input data 
+├── utils.py # Utility functions such as saving/loading models 
+├── requirements.txt # Python dependencies 
+├── README.md # Project description 
+└── data/ # Directory for storing datasets (e.g., images and labels)
 
 
 
