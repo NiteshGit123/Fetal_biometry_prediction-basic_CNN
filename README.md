@@ -9,13 +9,14 @@ The architecture consists of three encoding and three decoding stages, each havi
 The project is organized as follows:
 
 SegNet-Project/ 
-├── model.py # Contains the implementation of the SegNet model 
-├── train.py # Script to train the model on a dataset 
-├── dataset.py # Dataset loader for input data 
-├── utils.py # Utility functions such as saving/loading models 
-├── requirements.txt # Python dependencies 
-├── README.md # Project description 
-└── data/ # Directory for storing datasets (e.g., images and labels)
+ 
+    ├── model.py # Contains the implementation of the SegNet model 
+    ├── train.py # Script to train the model on a dataset 
+    ├── dataset.py # Dataset loader for input data 
+    ├── utils.py # Utility functions such as saving/loading models 
+    ├── requirements.txt # Python dependencies 
+    ├── README.md # Project description 
+    └── data/ # Directory for storing datasets (e.g., images and labels)
 
 
 
@@ -63,12 +64,13 @@ pip install -r requirements.txt
 The data directory should contain the images and corresponding segmentation masks used for training and validation. The images should be grayscale images, and the labels should be binary masks (for binary classification) or have multiple channels (for multi-class segmentation).
 
 data/
-├── train/
-   ├── images/       # Training images
-   └── masks/        # Corresponding segmentation masks
-├── val/
-   ├── images/       # Validation images
-   └── masks/        # Corresponding segmentation masks
-├── test/
-    ├── images/       # Testing images
-    └── masks/        # Corresponding segmentation masks
+      
+      ├── train/
+                ├── images/       # Training images
+                └── masks/        # Corresponding segmentation masks
+      ├── val/
+                ├── images/       # Validation images
+                └── masks/        # Corresponding segmentation masks
+      ├── test/
+                ├── images/       # Testing images
+                └── masks/        # Corresponding segmentation masks
