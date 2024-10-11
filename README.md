@@ -21,19 +21,17 @@ SegNet-Project/
 
 
 ### 1. model.py
-This file contains the implementation of the SegNet architecture using PyTorch. The network uses 3 stages of encoding and decoding layers. The architecture is as follows:
+This file contains the implementation of the BiometryDetection model using PyTorch. The network consists of two convolutional layers, followed by max pooling, dropout, and a fully connected layer for classification. The architecture is as follows:
 
-**Encoding:**
-- **Stage 1:** Two convolutional layers with 64 filters each, followed by batch normalization and max pooling with indices.
-- **Stage 2:** Two convolutional layers with 128 filters each, followed by batch normalization and max pooling with indices.
-- **Stage 3:** Three convolutional layers with 256 filters each, followed by batch normalization and max pooling with indices.
+**Convolutional Layers:**
+- **Layer 1:** A convolutional layer with 12 filters, kernel size 3, and padding 1, followed by ReLU activation and max pooling.
+- **Layer 2:** A convolutional layer with 24 filters, kernel size 3, and padding 1, followed by ReLU activation and max pooling.
 
-**Decoding:**
-- **Stage 3:** Three convolutional layers with 256 filters each, followed by batch normalization and unpooling.
-- **Stage 2:** Two convolutional layers with 128 filters each, followed by batch normalization and unpooling.
-- **Stage 1:** Two convolutional layers with 64 filters each, followed by batch normalization and unpooling to recover the input spatial size.
+**Regularization:**
+- **Dropout:** Applied after the second convolutional layer to prevent overfitting, with a dropout probability of 0.2.
 
-The forward method defines the forward pass of the network.
+**Fully Connected Layer:**
+- A linear layer that takes the flattened output from the convolutional layers and predicts class probabilities for 8 biometry points.
 
 ### 2. train.py
 This script is responsible for training the SegNet model on a custom dataset. It uses PyTorch's DataLoader to load the images and corresponding segmentation masks, computes the loss, and performs backpropagation to update the model's weights.
