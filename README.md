@@ -60,7 +60,6 @@ This file lists all the Python dependencies required to run the project. To inst
 pip install -r requirements.txt
 
 
-6. data/
 The data directory should contain the images and corresponding segmentation masks used for training and validation. The images should be grayscale images, and the labels should be binary masks (for binary classification) or have multiple channels (for multi-class segmentation).
 
 data/
