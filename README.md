@@ -1,9 +1,9 @@
-# SegNet Image Segmentation
+# Fetal Biometry prediction
 
 ## Introduction
-This project implements a simplified version of SegNet, a deep convolutional encoder-decoder architecture for image segmentation. SegNet is designed for pixel-wise classification, making it suitable for tasks like semantic segmentation, where the goal is to assign a class label to each pixel in the input image. The network in this project takes grayscale images as input (with 1 channel) and outputs a single-channel segmented image (binary or multi-class).
+This project implements the BiometryDetection model, a deep learning architecture for detecting biometric features in images. The model is designed for classification tasks, where the goal is to predict class labels for the input images. It takes grayscale images as input (with 1 channel) and outputs class probabilities for 8 distinct classes.
 
-The architecture consists of three encoding and three decoding stages, each having convolutional and batch normalization layers. Max pooling is used during the encoding phase to downsample the feature maps, and indices of pooling are saved to enable unpooling in the decoding phase.
+The architecture consists of two convolutional layers followed by max pooling, dropout for regularization, and a fully connected layer for classification. Max pooling is utilized to downsample the feature maps, and dropout is applied after the second convolutional layer to mitigate overfitting. The forward method defines the forward pass of the network, processing the input through the convolutional layers and ultimately producing class predictions.
 
 ## Project Structure
 The project is organized as follows:
