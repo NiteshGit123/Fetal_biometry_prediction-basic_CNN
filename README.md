@@ -8,7 +8,7 @@ The architecture consists of two convolutional layers followed by max pooling, d
 ## Project Structure
 The project is organized as follows:
 
-SegNet-Project/ 
+Project/ 
  
     ├── model.py # Contains the implementation of the SegNet model 
     ├── train.py # Script to train the model on a dataset 
